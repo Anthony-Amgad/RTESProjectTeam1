@@ -1,0 +1,893 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Anthony Amgad, Ain Shams University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  D:\Programs\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\UNI\Semester 8\RTES\RTESProjectTeam1\Team1Project.uvprojx
+Project File Date:  05/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\Programs\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1543): warning: 'WATCHDOG0_BASE' macro redefined [-Wmacro-redefined]
+#define WATCHDOG0_BASE                  0x40000000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(51): note: previous definition is here
+#define WATCHDOG0_BASE          0x40000000  // Watchdog0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1544): warning: 'WATCHDOG1_BASE' macro redefined [-Wmacro-redefined]
+#define WATCHDOG1_BASE                  0x40001000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(52): note: previous definition is here
+#define WATCHDOG1_BASE          0x40001000  // Watchdog1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1549): warning: 'SSI0_BASE' macro redefined [-Wmacro-redefined]
+#define SSI0_BASE                       0x40008000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(57): note: previous definition is here
+#define SSI0_BASE               0x40008000  // SSI0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1550): warning: 'SSI1_BASE' macro redefined [-Wmacro-redefined]
+#define SSI1_BASE                       0x40009000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(58): note: previous definition is here
+#define SSI1_BASE               0x40009000  // SSI1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1551): warning: 'SSI2_BASE' macro redefined [-Wmacro-redefined]
+#define SSI2_BASE                       0x4000A000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(59): note: previous definition is here
+#define SSI2_BASE               0x4000A000  // SSI2
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1552): warning: 'SSI3_BASE' macro redefined [-Wmacro-redefined]
+#define SSI3_BASE                       0x4000B000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(60): note: previous definition is here
+#define SSI3_BASE               0x4000B000  // SSI3
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1553): warning: 'UART0_BASE' macro redefined [-Wmacro-redefined]
+#define UART0_BASE                      0x4000C000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(61): note: previous definition is here
+#define UART0_BASE              0x4000C000  // UART0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1554): warning: 'UART1_BASE' macro redefined [-Wmacro-redefined]
+#define UART1_BASE                      0x4000D000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(62): note: previous definition is here
+#define UART1_BASE              0x4000D000  // UART1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1555): warning: 'UART2_BASE' macro redefined [-Wmacro-redefined]
+#define UART2_BASE                      0x4000E000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(63): note: previous definition is here
+#define UART2_BASE              0x4000E000  // UART2
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1556): warning: 'UART3_BASE' macro redefined [-Wmacro-redefined]
+#define UART3_BASE                      0x4000F000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(64): note: previous definition is here
+#define UART3_BASE              0x4000F000  // UART3
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1557): warning: 'UART4_BASE' macro redefined [-Wmacro-redefined]
+#define UART4_BASE                      0x40010000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(65): note: previous definition is here
+#define UART4_BASE              0x40010000  // UART4
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1558): warning: 'UART5_BASE' macro redefined [-Wmacro-redefined]
+#define UART5_BASE                      0x40011000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(66): note: previous definition is here
+#define UART5_BASE              0x40011000  // UART5
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1559): warning: 'UART6_BASE' macro redefined [-Wmacro-redefined]
+#define UART6_BASE                      0x40012000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(67): note: previous definition is here
+#define UART6_BASE              0x40012000  // UART6
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1560): warning: 'UART7_BASE' macro redefined [-Wmacro-redefined]
+#define UART7_BASE                      0x40013000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(68): note: previous definition is here
+#define UART7_BASE              0x40013000  // UART7
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1561): warning: 'I2C0_BASE' macro redefined [-Wmacro-redefined]
+#define I2C0_BASE                       0x40020000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(69): note: previous definition is here
+#define I2C0_BASE               0x40020000  // I2C0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1562): warning: 'I2C1_BASE' macro redefined [-Wmacro-redefined]
+#define I2C1_BASE                       0x40021000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(70): note: previous definition is here
+#define I2C1_BASE               0x40021000  // I2C1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1563): warning: 'I2C2_BASE' macro redefined [-Wmacro-redefined]
+#define I2C2_BASE                       0x40022000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(71): note: previous definition is here
+#define I2C2_BASE               0x40022000  // I2C2
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1564): warning: 'I2C3_BASE' macro redefined [-Wmacro-redefined]
+#define I2C3_BASE                       0x40023000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(72): note: previous definition is here
+#define I2C3_BASE               0x40023000  // I2C3
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1567): warning: 'PWM0_BASE' macro redefined [-Wmacro-redefined]
+#define PWM0_BASE                       0x40028000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(77): note: previous definition is here
+#define PWM0_BASE               0x40028000  // Pulse Width Modulator (PWM)
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1568): warning: 'PWM1_BASE' macro redefined [-Wmacro-redefined]
+#define PWM1_BASE                       0x40029000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(78): note: previous definition is here
+#define PWM1_BASE               0x40029000  // Pulse Width Modulator (PWM)
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1569): warning: 'QEI0_BASE' macro redefined [-Wmacro-redefined]
+#define QEI0_BASE                       0x4002C000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(79): note: previous definition is here
+#define QEI0_BASE               0x4002C000  // QEI0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1570): warning: 'QEI1_BASE' macro redefined [-Wmacro-redefined]
+#define QEI1_BASE                       0x4002D000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(80): note: previous definition is here
+#define QEI1_BASE               0x4002D000  // QEI1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1571): warning: 'TIMER0_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER0_BASE                     0x40030000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(81): note: previous definition is here
+#define TIMER0_BASE             0x40030000  // Timer0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1572): warning: 'TIMER1_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER1_BASE                     0x40031000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(82): note: previous definition is here
+#define TIMER1_BASE             0x40031000  // Timer1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1573): warning: 'TIMER2_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER2_BASE                     0x40032000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(83): note: previous definition is here
+#define TIMER2_BASE             0x40032000  // Timer2
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1574): warning: 'TIMER3_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER3_BASE                     0x40033000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(84): note: previous definition is here
+#define TIMER3_BASE             0x40033000  // Timer3
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1575): warning: 'TIMER4_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER4_BASE                     0x40034000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(85): note: previous definition is here
+#define TIMER4_BASE             0x40034000  // Timer4
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1576): warning: 'TIMER5_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER5_BASE                     0x40035000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(86): note: previous definition is here
+#define TIMER5_BASE             0x40035000  // Timer5
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1577): warning: 'WTIMER0_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER0_BASE                    0x40036000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(87): note: previous definition is here
+#define WTIMER0_BASE            0x40036000  // Wide Timer0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1578): warning: 'WTIMER1_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER1_BASE                    0x40037000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(88): note: previous definition is here
+#define WTIMER1_BASE            0x40037000  // Wide Timer1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1579): warning: 'ADC0_BASE' macro redefined [-Wmacro-redefined]
+#define ADC0_BASE                       0x40038000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(89): note: previous definition is here
+#define ADC0_BASE               0x40038000  // ADC0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1580): warning: 'ADC1_BASE' macro redefined [-Wmacro-redefined]
+#define ADC1_BASE                       0x40039000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(90): note: previous definition is here
+#define ADC1_BASE               0x40039000  // ADC1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1581): warning: 'COMP_BASE' macro redefined [-Wmacro-redefined]
+#define COMP_BASE                       0x4003C000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(91): note: previous definition is here
+#define COMP_BASE               0x4003C000  // Analog comparators
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1582): warning: 'CAN0_BASE' macro redefined [-Wmacro-redefined]
+#define CAN0_BASE                       0x40040000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(93): note: previous definition is here
+#define CAN0_BASE               0x40040000  // CAN0
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1583): warning: 'CAN1_BASE' macro redefined [-Wmacro-redefined]
+#define CAN1_BASE                       0x40041000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(94): note: previous definition is here
+#define CAN1_BASE               0x40041000  // CAN1
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1584): warning: 'WTIMER2_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER2_BASE                    0x4004C000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(95): note: previous definition is here
+#define WTIMER2_BASE            0x4004C000  // Wide Timer2
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1585): warning: 'WTIMER3_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER3_BASE                    0x4004D000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(96): note: previous definition is here
+#define WTIMER3_BASE            0x4004D000  // Wide Timer3
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1586): warning: 'WTIMER4_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER4_BASE                    0x4004E000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(97): note: previous definition is here
+#define WTIMER4_BASE            0x4004E000  // Wide Timer4
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1587): warning: 'WTIMER5_BASE' macro redefined [-Wmacro-redefined]
+#define WTIMER5_BASE                    0x4004F000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(98): note: previous definition is here
+#define WTIMER5_BASE            0x4004F000  // Wide Timer5
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1588): warning: 'USB0_BASE' macro redefined [-Wmacro-redefined]
+#define USB0_BASE                       0x40050000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(99): note: previous definition is here
+#define USB0_BASE               0x40050000  // USB 0 Controller
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1595): warning: 'EEPROM_BASE' macro redefined [-Wmacro-redefined]
+#define EEPROM_BASE                     0x400AF000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(121): note: previous definition is here
+#define EEPROM_BASE             0x400AF000  // EEPROM memory
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1596): warning: 'SYSEXC_BASE' macro redefined [-Wmacro-redefined]
+#define SYSEXC_BASE                     0x400F9000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(133): note: previous definition is here
+#define SYSEXC_BASE             0x400F9000  // System Exception Module
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1597): warning: 'HIB_BASE' macro redefined [-Wmacro-redefined]
+#define HIB_BASE                        0x400FC000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(134): note: previous definition is here
+#define HIB_BASE                0x400FC000  // Hibernation Module
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1598): warning: 'FLASH_CTRL_BASE' macro redefined [-Wmacro-redefined]
+#define FLASH_CTRL_BASE                 0x400FD000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(135): note: previous definition is here
+#define FLASH_CTRL_BASE         0x400FD000  // FLASH Controller
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1599): warning: 'SYSCTL_BASE' macro redefined [-Wmacro-redefined]
+#define SYSCTL_BASE                     0x400FE000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(136): note: previous definition is here
+#define SYSCTL_BASE             0x400FE000  // System Control
+        ^
+main.c(13): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(44): warning: In file included from...
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1600): warning: 'UDMA_BASE' macro redefined [-Wmacro-redefined]
+#define UDMA_BASE                       0x400FF000UL
+        ^
+../tivaware_c_series_2_1_4_178__win/tivaware_c_series_2_1_4_178\inc/hw_memmap.h(137): note: previous definition is here
+#define UDMA_BASE               0x400FF000  // uDMA Controller
+        ^
+main.c(32): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void GPIOA_Handler(){
+                  ^
+                   void
+main.c(32): warning: no previous prototype for function 'GPIOA_Handler' [-Wmissing-prototypes]
+void GPIOA_Handler(){
+     ^
+main.c(32): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIOA_Handler(){
+^
+static 
+main.c(39): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void MSISR(){
+          ^
+           void
+main.c(39): warning: no previous prototype for function 'MSISR' [-Wmissing-prototypes]
+void MSISR(){
+     ^
+main.c(39): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void MSISR(){
+^
+static 
+main.c(39): warning: function 'MSISR' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void MSISR(){
+            ^
+main.c(53): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void UpLimit(){
+            ^
+             void
+main.c(56): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                uint32_t cnt = 0;
+                         ^
+main.c(53): warning: no previous prototype for function 'UpLimit' [-Wmissing-prototypes]
+void UpLimit(){
+     ^
+main.c(53): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void UpLimit(){
+^
+static 
+main.c(53): warning: function 'UpLimit' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void UpLimit(){
+              ^
+main.c(65): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DownLimit(){
+              ^
+               void
+main.c(68): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                uint32_t cnt = 0;
+                         ^
+main.c(65): warning: no previous prototype for function 'DownLimit' [-Wmissing-prototypes]
+void DownLimit(){
+     ^
+main.c(65): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DownLimit(){
+^
+static 
+main.c(65): warning: function 'DownLimit' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void DownLimit(){
+                ^
+main.c(77): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DriverDownListen(){
+                     ^
+                      void
+main.c(98): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD();
+                                   ^
+main.c(84): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                        int cnt = 0;
+                            ^
+main.c(77): warning: no previous prototype for function 'DriverDownListen' [-Wmissing-prototypes]
+void DriverDownListen(){
+     ^
+main.c(77): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DriverDownListen(){
+^
+static 
+main.c(77): warning: function 'DriverDownListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void DriverDownListen(){
+                       ^
+main.c(103): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void DriverUpListen(){
+                   ^
+                    void
+main.c(123): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD();
+                                   ^
+main.c(110): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                        int cnt = 0;
+                            ^
+main.c(103): warning: no previous prototype for function 'DriverUpListen' [-Wmissing-prototypes]
+void DriverUpListen(){
+     ^
+main.c(103): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DriverUpListen(){
+^
+static 
+main.c(103): warning: function 'DriverUpListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void DriverUpListen(){
+                     ^
+main.c(128): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void PassDownListen(){
+                   ^
+                    void
+main.c(151): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD();
+                                   ^
+main.c(128): warning: no previous prototype for function 'PassDownListen' [-Wmissing-prototypes]
+void PassDownListen(){
+     ^
+main.c(128): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PassDownListen(){
+^
+static 
+main.c(128): warning: function 'PassDownListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void PassDownListen(){
+                     ^
+main.c(156): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void PassUpListen(){
+                 ^
+                  void
+main.c(178): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD();
+                                   ^
+main.c(156): warning: no previous prototype for function 'PassUpListen' [-Wmissing-prototypes]
+void PassUpListen(){
+     ^
+main.c(156): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PassUpListen(){
+^
+static 
+main.c(156): warning: function 'PassUpListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void PassUpListen(){
+                   ^
+main.c(183): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void WindowMove(){
+               ^
+                void
+main.c(183): warning: no previous prototype for function 'WindowMove' [-Wmissing-prototypes]
+void WindowMove(){
+     ^
+main.c(183): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void WindowMove(){
+^
+static 
+main.c(183): warning: function 'WindowMove' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void WindowMove(){
+                 ^
+main.c(222): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main(){
+        ^
+         void
+main.c(314): warning: for loop has empty body [-Wempty-body]
+        for( ;; ); 
+                 ^
+main.c(314): note: put the semicolon on a separate line to silence this warning
+main.c(316): warning: 'return' will never be executed [-Wunreachable-code-return]
+  return 0;     
+         ^
+main.c(22): warning: no previous extern declaration for non-static variable 'xISRTASK' [-Wmissing-variable-declarations]
+xTaskHandle xISRTASK;
+            ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xTaskHandle xISRTASK;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1067): note: expanded from macro 'xTaskHandle'
+    #define xTaskHandle                   TaskHandle_t
+                                          ^
+main.c(24): warning: no previous extern declaration for non-static variable 'xWindowQueue' [-Wmissing-variable-declarations]
+xQueueHandle xWindowQueue;
+             ^
+main.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xQueueHandle xWindowQueue;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1068): note: expanded from macro 'xQueueHandle'
+    #define xQueueHandle                  QueueHandle_t
+                                          ^
+main.c(25): warning: no previous extern declaration for non-static variable 'xMovingSema' [-Wmissing-variable-declarations]
+xSemaphoreHandle xMovingSema;
+                 ^
+main.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xMovingSema;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+main.c(26): warning: no previous extern declaration for non-static variable 'xUpSema' [-Wmissing-variable-declarations]
+xSemaphoreHandle xUpSema;
+                 ^
+main.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xUpSema;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+main.c(27): warning: no previous extern declaration for non-static variable 'xDownSema' [-Wmissing-variable-declarations]
+xSemaphoreHandle xDownSema;
+                 ^
+main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xDownSema;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+main.c(28): warning: no previous extern declaration for non-static variable 'xEmptyQueueSema' [-Wmissing-variable-declarations]
+xSemaphoreHandle xEmptyQueueSema;
+                 ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xEmptyQueueSema;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+main.c(29): warning: no previous extern declaration for non-static variable 'xStuckSema' [-Wmissing-variable-declarations]
+xSemaphoreHandle xStuckSema;
+                 ^
+main.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xStuckSema;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+main.c(30): warning: no previous extern declaration for non-static variable 'xStuckMutex' [-Wmissing-variable-declarations]
+xSemaphoreHandle xStuckMutex;
+                 ^
+main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+xSemaphoreHandle xStuckMutex;
+^
+C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
+    #define xSemaphoreHandle              SemaphoreHandle_t
+                                          ^
+135 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=15396 RO-data=1040 RW-data=8 ZI-data=11776  
+".\Objects\Team1Project.axf" - 0 Error(s), 135 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.5.1.pack
+                ARM.CMSIS-FreeRTOS.10.5.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: CMSIS RTOS2 Version: 10.5.1
+   * Component: Core Variant: Cortex-M Version: 10.5.1
+   * Component: Event Groups Version: 10.5.1
+   * Component: Heap Variant: Heap_1 Version: 10.5.1
+   * Component: Timers Version: 10.5.1
+   * Component: FreeRTOS Variant: Cortex-M Version: 10.5.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/CMSIS/RTOS2/FreeRTOS/Include
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include
+  C:/Users/Anthony Amgad/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:10.5.1
+      Include file:  CMSIS/RTOS2/FreeRTOS/Config/ARMCM/FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.5.1
+      Include file:  Source/include/FreeRTOS.h
+      Source file:   Source/queue.c
+      Include file:  Source/include/queue.h
+      Include file:  Source/include/semphr.h
+      Source file:   Source/list.c
+      Source file:   Source/tasks.c
+      Include file:  Source/include/task.h
+      Source file:   Source/portable/GCC/ARM_CM4F/port.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.5.1
+      Include file:  Source/include/event_groups.h
+      Source file:   Source/event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.5.1
+      Source file:   Source/portable/MemMang/heap_1.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.5.1
+      Include file:  Source/include/timers.h
+      Source file:   Source/timers.c
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:10.5.1
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/ARM/clib_arm.c
+      Include file:  CMSIS/RTOS2/FreeRTOS/Include/freertos_mpool.h
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/os_systick.c
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
