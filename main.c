@@ -29,11 +29,19 @@ xSemaphoreHandle xEmptyQueueSema;
 xSemaphoreHandle xStuckSema;
 xSemaphoreHandle xStuckMutex;
 
-void GPIOA_Handler(){
-	portBASE_TYPE xHigherPrio = pdFALSE;
-	xSemaphoreGiveFromISR(xStuckSema, &xHigherPrio);
-	portEND_SWITCHING_ISR(xHigherPrio);
-	GPIOIntClear(GPIO_PORTA_BASE,GPIO_INT_PIN_2);  
+void Stuck_Handler(){
+	//GPIOIntDisable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
+  //portBASE_TYPE xHigherPrio = pdFALSE;
+	while(1){
+		if(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2){
+			xSemaphoreGive(xStuckSema);
+			while(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2);
+			for(int i = 0; i < 100000; i++);
+		}
+	//while(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2);
+	//GPIOIntClear(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
+	//portEND_SWITCHING_ISR(xHigherPrio);
+	}
 }
 
 void MSISR(){
@@ -47,6 +55,7 @@ void MSISR(){
 		GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_2,0);
 		GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,0);
 		xSemaphoreGive(xStuckMutex);
+		GPIOIntEnable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);  
 	}
 }
 
@@ -253,12 +262,12 @@ int main(){
 	
 	GPIOPinTypeGPIOInput(GPIO_PORTA_BASE, GPIO_PIN_2);
   GPIOPadConfigSet(GPIO_PORTA_BASE, GPIO_PIN_2,GPIO_STRENGTH_2MA,GPIO_PIN_TYPE_STD_WPD);
-	GPIOIntDisable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
+	/*GPIOIntDisable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
   IntMasterEnable();
   IntEnable(INT_GPIOA);
   GPIOIntTypeSet(GPIO_PORTA_BASE,GPIO_PIN_2,GPIO_RISING_EDGE );
-	NVIC_SetPriority(mainSW_INTURRUPT_PortA,5);
-	GPIOIntEnable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
+	NVIC_SetPriority(mainSW_INTURRUPT_PortA,4);
+	GPIOIntEnable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);*/
 	
 	
 	xTaskCreate(DriverUpListen,
@@ -303,14 +312,20 @@ int main(){
 						NULL,
 						1,
 						NULL);
+	xTaskCreate(Stuck_Handler,
+						"StuckInt",
+						40,
+						NULL,
+						1,
+						&xISRTASK);
 	xTaskCreate(MSISR,
 						"ISRTASK",
 						40,
 						NULL,
-						5,
+						3,
 						&xISRTASK);
 	vTaskStartScheduler();
-	
+
 	for( ;; ); 
   
   return 0;	
