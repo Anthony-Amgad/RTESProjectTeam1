@@ -1,5 +1,5 @@
 --cpu=Cortex-M4.fp.sp
-"..\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178\driverlib\rvmdk\driverlib.lib"
+"G:\STEM 1\Programs\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178\driverlib\rvmdk\driverlib.lib"
 ".\objects\main.o"
 ".\objects\clib_arm.o"
 ".\objects\cmsis_os2.o"

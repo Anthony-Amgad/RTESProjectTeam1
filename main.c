@@ -25,22 +25,16 @@ xQueueHandle xWindowQueue;
 xSemaphoreHandle xMovingSema;
 xSemaphoreHandle xUpSema;
 xSemaphoreHandle xDownSema;
-xSemaphoreHandle xEmptyQueueSema;
 xSemaphoreHandle xStuckSema;
 xSemaphoreHandle xStuckMutex;
 
 void Stuck_Handler(){
-	//GPIOIntDisable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
-  //portBASE_TYPE xHigherPrio = pdFALSE;
 	while(1){
 		if(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2){
 			xSemaphoreGive(xStuckSema);
 			while(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2);
 			for(int i = 0; i < 100000; i++);
 		}
-	//while(GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2) == GPIO_PIN_2);
-	//GPIOIntClear(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
-	//portEND_SWITCHING_ISR(xHigherPrio);
 	}
 }
 
@@ -93,14 +87,11 @@ void DriverDownListen(){
 			int cnt = 0;
 			while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_3) == GPIO_PIN_3){
 				if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-					//time_t secs = 1; // 2 minutes (can be retrieved from user's input)
-					//time_t startTime = time(NULL);
 					if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0))
 						xQueueSendToBack(xWindowQueue, &Sup, 0);
 					cnt++;
-					//while (time(NULL) - startTime < secs);
 					if(cnt == 1)
-						for(int i = 0; i < 1000000; i++);
+						for(int i = 0; i < 200000; i++);
 				}
 			}
 			if(cnt == 1)
@@ -121,13 +112,11 @@ void DriverUpListen(){
 			int cnt = 0;
 			while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_2) == GPIO_PIN_2){
 				if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-					//time_t secs = 1; // 2 minutes (can be retrieved from user's input)
-					//time_t startTime = time(NULL);
 					if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_4) == 0))
 						xQueueSendToBack(xWindowQueue, &Sup, 0);
 					cnt++;
 					if(cnt == 1)
-						for(int i = 0; i < 1000000; i++);
+						for(int i = 0; i < 200000; i++);
 				}
 			}
 			if(cnt == 1)
@@ -149,14 +138,11 @@ void PassDownListen(){
 				int cnt = 0;
 				while(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_2) == GPIO_PIN_2){
 					if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-						//time_t secs = 1; // 2 minutes (can be retrieved from user's input)
-						//time_t startTime = time(NULL);
-						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0))
+						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0) && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0)
 							xQueueSendToBack(xWindowQueue, &Sup, 0);
 						cnt++;
-						//while (time(NULL) - startTime < secs);
 						if(cnt == 1)
-							for(int i = 0; i < 1000000; i++);
+							for(int i = 0; i < 200000; i++);
 					}
 				}
 				if(cnt == 1)
@@ -179,13 +165,11 @@ void PassUpListen(){
 				int cnt = 0;
 				while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_1) == GPIO_PIN_1){
 					if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-						//time_t secs = 1; // 2 minutes (can be retrieved from user's input)
-						//time_t startTime = time(NULL);
-						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_4) == 0))
+						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_4) == 0) && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0)
 							xQueueSendToBack(xWindowQueue, &Sup, 0);
 						cnt++;
 						if(cnt == 1)
-							for(int i = 0; i < 1000000; i++);
+							for(int i = 0; i < 200000; i++);
 					}
 				}
 				if(cnt == 1)
@@ -199,17 +183,13 @@ void PassUpListen(){
 
 void WindowMove(){
 	int8_t data = 0;
-	//time_t secs;
-	//time_t startTime;
 	while(1){
 		xQueueReceive(xWindowQueue, &data, portMAX_DELAY);
 		switch(data){
 			case 1:
 				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_2,GPIO_PIN_2);
-				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,0);
-				//secs = 1; // 2 minutes (can be retrieved from user's input)
-				//startTime = time(NULL);				
-				for(int i = 0; i < 1000000; i++);
+				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,0);			
+				for(int i = 0; i < 200000; i++);
 				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_2,0);
 				break;
 			case 2:
@@ -219,10 +199,8 @@ void WindowMove(){
 				break;
 			case -1:
 				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_2,0);
-				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,GPIO_PIN_3);
-				//secs = 1; // 2 minutes (can be retrieved from user's input)
-				//startTime = time(NULL);				
-				for(int i = 0; i < 1000000; i++);
+				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,GPIO_PIN_3);			
+				for(int i = 0; i < 200000; i++);
 				GPIOPinWrite(GPIO_PORTF_BASE,GPIO_PIN_3,0);
 				break;
 			case -2:
@@ -242,13 +220,9 @@ int main(){
 	xMovingSema = xSemaphoreCreateMutex();
 	xUpSema = xSemaphoreCreateBinary();
 	xDownSema = xSemaphoreCreateBinary();
-	xEmptyQueueSema = xSemaphoreCreateBinary();
 	xStuckMutex = xSemaphoreCreateMutex();
 	xStuckSema = xSemaphoreCreateBinary();
-	
-	xSemaphoreGive(xMovingSema);
-	xSemaphoreGive(xStuckMutex);
-	
+
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOB));
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
@@ -270,12 +244,6 @@ int main(){
 	
 	GPIOPinTypeGPIOInput(GPIO_PORTA_BASE, GPIO_PIN_2);
   GPIOPadConfigSet(GPIO_PORTA_BASE, GPIO_PIN_2,GPIO_STRENGTH_2MA,GPIO_PIN_TYPE_STD_WPD);
-	/*GPIOIntDisable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);
-  IntMasterEnable();
-  IntEnable(INT_GPIOA);
-  GPIOIntTypeSet(GPIO_PORTA_BASE,GPIO_PIN_2,GPIO_RISING_EDGE );
-	NVIC_SetPriority(mainSW_INTURRUPT_PortA,4);
-	GPIOIntEnable(GPIO_PORTA_BASE,GPIO_INT_PIN_2);*/
 	
 	
 	xTaskCreate(DriverUpListen,

@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>rvmdk PART_TM4C123GH6PM TARGET_IS_TM4C123_RB1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178</IncludePath>
+              <IncludePath>G:\STEM 1\Programs\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,7 +387,7 @@
             <File>
               <FileName>driverlib.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178\driverlib\rvmdk\driverlib.lib</FilePath>
+              <FilePath>G:\STEM 1\Programs\tivaware_c_series_2_1_4_178__win\tivaware_c_series_2_1_4_178\driverlib\rvmdk\driverlib.lib</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
