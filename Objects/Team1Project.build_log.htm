@@ -636,102 +636,68 @@ main.c(68): warning: function 'DownLimit' could be declared with attribute 'nore
 void DownLimit(){
                 ^
 main.c(80): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-void DriverDownListen(){
-                     ^
-                      void
-main.c(100): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
-                        taskYIELD();
-                                   ^
-main.c(87): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
-                        int cnt = 0;
-                            ^
-main.c(80): warning: no previous prototype for function 'DriverDownListen' [-Wmissing-prototypes]
-void DriverDownListen(){
-     ^
-main.c(80): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void DriverDownListen(){
-^
-static 
-main.c(80): warning: function 'DriverDownListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void DriverDownListen(){
-                       ^
-main.c(105): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-void DriverUpListen(){
-                   ^
-                    void
-main.c(125): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
-                        taskYIELD();
-                                   ^
-main.c(112): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
-                        int cnt = 0;
-                            ^
-main.c(105): warning: no previous prototype for function 'DriverUpListen' [-Wmissing-prototypes]
-void DriverUpListen(){
-     ^
-main.c(105): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void DriverUpListen(){
-^
-static 
-main.c(105): warning: function 'DriverUpListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void DriverUpListen(){
-                     ^
-main.c(130): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-void PassDownListen(){
-                   ^
-                    void
-main.c(152): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
-                        taskYIELD();
-                                   ^
-main.c(130): warning: no previous prototype for function 'PassDownListen' [-Wmissing-prototypes]
-void PassDownListen(){
-     ^
-main.c(130): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void PassDownListen(){
-^
-static 
-main.c(130): warning: function 'PassDownListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void PassDownListen(){
-                     ^
-main.c(157): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-void PassUpListen(){
+void DriverListen(){
                  ^
                   void
-main.c(179): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
-                        taskYIELD();
-                                   ^
-main.c(157): warning: no previous prototype for function 'PassUpListen' [-Wmissing-prototypes]
-void PassUpListen(){
+main.c(90): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                                int cnt = 0;
+                                    ^
+main.c(107): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+                        int cnt = 0;
+                            ^
+main.c(122): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD();
+                           ^
+main.c(80): warning: no previous prototype for function 'DriverListen' [-Wmissing-prototypes]
+void DriverListen(){
      ^
-main.c(157): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void PassUpListen(){
+main.c(80): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DriverListen(){
 ^
 static 
-main.c(157): warning: function 'PassUpListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-void PassUpListen(){
+main.c(80): warning: function 'DriverListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void DriverListen(){
                    ^
-main.c(184): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(126): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void PassListen(){
+               ^
+                void
+main.c(172): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD();
+                           ^
+main.c(126): warning: no previous prototype for function 'PassListen' [-Wmissing-prototypes]
+void PassListen(){
+     ^
+main.c(126): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PassListen(){
+^
+static 
+main.c(126): warning: function 'PassListen' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void PassListen(){
+                 ^
+main.c(177): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void WindowMove(){
                ^
                 void
-main.c(184): warning: no previous prototype for function 'WindowMove' [-Wmissing-prototypes]
+main.c(177): warning: no previous prototype for function 'WindowMove' [-Wmissing-prototypes]
 void WindowMove(){
      ^
-main.c(184): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(177): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void WindowMove(){
 ^
 static 
-main.c(184): warning: function 'WindowMove' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+main.c(177): warning: function 'WindowMove' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
 void WindowMove(){
                  ^
-main.c(217): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+main.c(210): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 int main(){
         ^
          void
-main.c(305): warning: for loop has empty body [-Wempty-body]
+main.c(286): warning: for loop has empty body [-Wempty-body]
         for( ;; ); 
                  ^
-main.c(305): note: put the semicolon on a separate line to silence this warning
-main.c(307): warning: 'return' will never be executed [-Wunreachable-code-return]
+main.c(286): note: put the semicolon on a separate line to silence this warning
+main.c(288): warning: 'return' will never be executed [-Wunreachable-code-return]
   return 0;     
          ^
 main.c(22): warning: no previous extern declaration for non-static variable 'xISRTASK' [-Wmissing-variable-declarations]
@@ -797,11 +763,11 @@ xSemaphoreHandle xStuckMutex;
 C:/Users/Kerollos Wageeh/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include\FreeRTOS.h(1069): note: expanded from macro 'xSemaphoreHandle'
     #define xSemaphoreHandle              SemaphoreHandle_t
                                           ^
-135 warnings generated.
+127 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=15014 RO-data=778 RW-data=8 ZI-data=11776  
-".\Objects\Team1Project.axf" - 0 Error(s), 135 Warning(s).
+Program Size: Code=14950 RO-data=746 RW-data=8 ZI-data=11776  
+".\Objects\Team1Project.axf" - 0 Error(s), 127 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -849,39 +815,39 @@ Package Vendor: Keil
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.5.1
       Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
-      Include file:  Source/include/semphr.h
-      Include file:  Source/include/FreeRTOS.h
-      Source file:   Source/queue.c
       Include file:  Source/include/queue.h
+      Include file:  Source/include/semphr.h
+      Source file:   Source/queue.c
       Source file:   Source/list.c
-      Source file:   Source/tasks.c
       Include file:  Source/include/task.h
+      Source file:   Source/tasks.c
+      Include file:  Source/include/FreeRTOS.h
       Source file:   Source/portable/GCC/ARM_CM4F/port.c
 
    * Component: ARM.FreeRTOS::RTOS:Event Groups:10.5.1
-      Source file:   Source/event_groups.c
       Include file:  Source/include/event_groups.h
+      Source file:   Source/event_groups.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.5.1
       Source file:   Source/portable/MemMang/heap_1.c
 
    * Component: ARM.FreeRTOS::RTOS:Timers:10.5.1
-      Source file:   Source/timers.c
       Include file:  Source/include/timers.h
+      Source file:   Source/timers.c
 
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:10.5.1
-      Include file:  CMSIS/RTOS2/FreeRTOS/Include/freertos_mpool.h
-      Source file:   CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
       Source file:   CMSIS/RTOS2/FreeRTOS/Source/ARM/clib_arm.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
       Source file:   CMSIS/RTOS2/FreeRTOS/Source/os_systick.c
+      Include file:  CMSIS/RTOS2/FreeRTOS/Include/freertos_mpool.h
 
    * Component: Keil::Device:Startup:1.0.1
-      Include file:  Device/Include/TM4C123/TM4C123.h
-      Source file:   Device/Source/ARM/startup_TM4C123.s
       Source file:   Device/Source/system_TM4C123.c
-Build Time Elapsed:  00:00:04
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
