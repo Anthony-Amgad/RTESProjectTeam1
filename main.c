@@ -135,9 +135,9 @@ void PassListen(){
 				xSemaphoreTake(xMovingSema,portMAX_DELAY);
 				if(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0){
 					int cnt = 0;
-					while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_1) == GPIO_PIN_1 && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0){
+					while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_1) == GPIO_PIN_1){
 						if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-							if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_4) == 0))
+							if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_4) == 0) && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0)
 								xQueueSendToBack(xWindowQueue, &Sup, 0);
 							cnt++;
 							if(cnt == 1)
@@ -154,9 +154,9 @@ void PassListen(){
 			xSemaphoreTake(xMovingSema,portMAX_DELAY);
 			if(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0){
 				int cnt = 0;
-				while(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_2) == GPIO_PIN_2 && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0){
+				while(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_2) == GPIO_PIN_2){
 					if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
-						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0))
+						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0) && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0)
 							xQueueSendToBack(xWindowQueue, &Sdown, 0);
 						cnt++;
 						if(cnt == 1)
