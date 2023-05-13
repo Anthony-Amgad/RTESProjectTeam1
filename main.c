@@ -78,8 +78,8 @@ void DownLimit(){
 }
 
 void DriverDownListen(){
-	int8_t Sup = -1;
-	int8_t Lup = -2;
+	int8_t Sdown = -1;
+	int8_t Ldown = -2;
 	while(1)
 	{
 		if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
@@ -128,8 +128,8 @@ void DriverUpListen(){
 }
 
 void PassDownListen(){
-	int8_t Sup = -1;
-	int8_t Lup = -2;
+	int8_t Sdown = -1;
+	int8_t Ldown = -2;
 	while(1)
 	{
 		if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
