@@ -88,14 +88,14 @@ void DriverDownListen(){
 			while(GPIOPinRead(GPIO_PORTB_BASE, GPIO_PIN_3) == GPIO_PIN_3){
 				if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
 					if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0))
-						xQueueSendToBack(xWindowQueue, &Sup, 0);
+						xQueueSendToBack(xWindowQueue, &Sdown, 0);
 					cnt++;
 					if(cnt == 1)
 						for(int i = 0; i < 200000; i++);
 				}
 			}
 			if(cnt == 1)
-				xQueueSendToBack(xWindowQueue, &Lup, 0);
+				xQueueSendToBack(xWindowQueue, &Ldown, 0);
 			xSemaphoreGive(xMovingSema);
 			taskYIELD();
 		}
@@ -139,14 +139,14 @@ void PassDownListen(){
 				while(GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_2) == GPIO_PIN_2){
 					if(xSemaphoreGetMutexHolder(xStuckMutex) != xISRTASK){
 						if(cnt != 0 && (GPIOPinRead(GPIO_PORTE_BASE, GPIO_PIN_5) == 0) && GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_1) == 0)
-							xQueueSendToBack(xWindowQueue, &Sup, 0);
+							xQueueSendToBack(xWindowQueue, &Sdown, 0);
 						cnt++;
 						if(cnt == 1)
 							for(int i = 0; i < 200000; i++);
 					}
 				}
 				if(cnt == 1)
-					xQueueSendToBack(xWindowQueue, &Lup, 0);
+					xQueueSendToBack(xWindowQueue, &Ldown, 0);
 			}
 			xSemaphoreGive(xMovingSema);
 			taskYIELD();
